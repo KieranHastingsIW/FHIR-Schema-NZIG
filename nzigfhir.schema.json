@@ -107,7 +107,7 @@
         "Organization": "#/definitions/Organization",
         "OrganizationAffiliation": "#/definitions/OrganizationAffiliation",
         "Parameters": "#/definitions/Parameters",
-        "Patient": "#/definitions/Patient",
+        "Patient": "#/definitions/nzPatient",
         "PaymentNotice": "#/definitions/PaymentNotice",
         "PaymentReconciliation": "#/definitions/PaymentReconciliation",
         "Person": "#/definitions/Person",
@@ -584,7 +584,7 @@
         "$ref": "#/definitions/TestScript"
       },
       {
-        "$ref": "#/definitions/ValueSet"
+        "$ref": "#/definitions/ValuefineSet"
       },
       {
         "$ref": "#/definitions/VerificationResult"
