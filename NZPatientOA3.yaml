@@ -37,6 +37,9 @@ definitions:
       iwi:
         description: The iwi of the patient
         $ref: '#/definitions/iwi'
+      nhi:
+        description: The NHI of the patient
+        $ref: '#/definitions/nhi'
       implicitRules:
         description: >-
           A reference to a set of rules that were followed when the resource was
@@ -429,6 +432,9 @@ definitions:
         items:
           $ref: '#/definitions/Reference'
         type: array
+  nhi:
+    type: string
+    description: A stream of bytes
   uri:
     pattern: ^\S*$
     type: string
