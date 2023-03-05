@@ -1,0 +1,34 @@
+{
+  "resourceType": "resourceType",
+
+  "ethnicity": {
+    "supportingInformation": [
+      {
+        "reference": "reference",
+        "extension": [
+          null,
+          null
+        ],
+        "display": "display",
+        "id": "id",
+        "type": "type"
+      },
+      {
+        "reference": "reference",
+        "extension": [
+          null,
+          null
+        ],
+        "display": "display",
+        "id": "id",
+        "type": "type"
+      }
+    ],
+    "description": "description",
+    "id": "id",
+    "ethnicityCode": "New Zealand European",
+    "resourceType": "resourceType"
+  }
+  
+
+}
