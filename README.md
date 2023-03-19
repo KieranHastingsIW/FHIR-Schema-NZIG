@@ -1,8 +1,18 @@
 # FHIR-Schema-NZIG
 A repository to work on applying the implementation of the FHIR NZIG in a schema that will allow for OpenApi code gen
+## This repository contains files needed to set up and test a basic NZ FHIR patient REST Api.
+### Generating patient-output.json file
+* The patient-output.json file is generated using a modified version of the FHIR-to-Swagger generater.
+* The source repository can be found here `https://github.com/athiththan11/FHIR-to-Swagger`
+* The changes required to make the generated swagger file tha same as the NZ Patient resource described in the FHIR NZIG are as follows.
+ - in the FHIR-to-Swagger repo, delete the `fhir.schem.json` file found in the schemas folder
+ - place the `nzigfhir.schem.json` file in the schema folder and rename it to `fhir.schem.json`
+ - follow the read me until you get to the first example, replace the resource Coverage with Patinet, this will generate the `patient-output.json` file, which is the same as the one found in this repository.
 
-### Generating openApi Yaml
-* This repository contains files needed to set up and test a basic NZ FHIR patient REST Api. 
+
+
+
+### Generating openApi Yaml 
 * By importing the `patient-output.json` file into Swagger hub you will be shown all the CRUD operations that can be performed on the nzPatient resource.
 * To do this look up swagger hub in a web browser of your choosing, sign in or make an account if you do not have one already. Once logged in in the top left corner of the nav bar select create new, then select Import and Document API, Browse and find the `patient-output.json` file, click import, then import definition. 
 
